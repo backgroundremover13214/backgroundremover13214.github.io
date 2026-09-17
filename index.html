@@ -1065,10 +1065,66 @@ footer {
 
 }
 
+
+/* ================================
+   DESKTOP SIDE AD PLACEHOLDERS
+================================ */
+
+.side-ad-rail {
+    display: none;
+}
+
+@media (min-width: 1540px) {
+    .side-ad-rail {
+        display: flex;
+        position: absolute;
+        top: 210px;
+        width: 210px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .side-ad-rail.left {
+        left: max(20px, calc(50% - 765px));
+    }
+
+    .side-ad-rail.right {
+        right: max(20px, calc(50% - 765px));
+    }
+
+    .side-ad-slot {
+        min-height: 220px;
+        border: 1px dashed #d7dce2;
+        border-radius: 10px;
+        background: #fafafa;
+        color: #a0a7b0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 0.2px;
+    }
+}
+
 </style>
 </head>
 
 <body>
+
+<!-- DESKTOP SIDE AD PLACEHOLDERS -->
+<aside class="side-ad-rail left" aria-label="Left advertisement placeholders">
+    <div class="side-ad-slot">Advertisement</div>
+    <div class="side-ad-slot">Advertisement</div>
+    <div class="side-ad-slot">Advertisement</div>
+</aside>
+
+<aside class="side-ad-rail right" aria-label="Right advertisement placeholders">
+    <div class="side-ad-slot">Advertisement</div>
+    <div class="side-ad-slot">Advertisement</div>
+    <div class="side-ad-slot">Advertisement</div>
+</aside>
+
 
 <div class="page">
 
