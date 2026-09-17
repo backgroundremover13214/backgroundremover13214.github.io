@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://backgroundremover13214.github.io/background-remover/sitemap.xml
